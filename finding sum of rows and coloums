@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int numberOfRows, numberOfColumns;
+    cin >> numberOfRows >> numberOfColumns;
+
+    int marksTable[numberOfRows][numberOfColumns];
+    for (int i = 0; i < numberOfRows; i++) {
+        for (int j = 0; j < numberOfColumns; j++) {
+            cin >> marksTable[i][j];
+        }
+    }
+
+    int totalSum = 0;
+    for (int i = 0; i < numberOfRows; i++) {
+        for (int j = 0; j < numberOfColumns; j++) {
+            totalSum += marksTable[i][j];
+        }
+    }
+
+    cout << totalSum << endl;
+
+    return 0;
+}
