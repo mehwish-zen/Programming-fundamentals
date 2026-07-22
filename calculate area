@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+double calculateArea(double side) {
+    return side * side;
+}
+
+double calculateArea(double length, double width) {
+    return length * width;
+}
+
+int main() {
+    double squareSide;
+    cin >> squareSide;
+
+    double rectangleLength, rectangleWidth;
+    cin >> rectangleLength >> rectangleWidth;
+
+    cout << "Area of Square: " << calculateArea(squareSide) << endl;
+    cout << "Area of Rectangle: " << calculateArea(rectangleLength, rectangleWidth) << endl;
+
+    return 0;
+}
