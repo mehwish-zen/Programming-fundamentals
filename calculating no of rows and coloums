@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int numberOfRows, numberOfColumns;
+    cin >> numberOfRows >> numberOfColumns;
+
+    int seatingChart[numberOfRows][numberOfColumns];
+    for (int i = 0; i < numberOfRows; i++) {
+        for (int j = 0; j < numberOfColumns; j++) {
+            cin >> seatingChart[i][j];
+        }
+    }
+
+    for (int i = 0; i < numberOfRows; i++) {
+        for (int j = 0; j < numberOfColumns; j++) {
+            cout << seatingChart[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
