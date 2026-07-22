@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+double calculateStrikeRate(int runs, int balls) {
+    return ((double)runs / balls) * 100;
+}
+
+int main() {
+    int runsScored, ballsFaced;
+    cin >> runsScored >> ballsFaced;
+
+    double strikeRate = calculateStrikeRate(runsScored, ballsFaced);
+
+    cout << "Strike Rate: " << strikeRate << endl;
+
+    return 0;
+}
