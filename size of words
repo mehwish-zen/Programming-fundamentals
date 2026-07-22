@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+void printVertically(char word[], int size) {
+    for (int i = 0; i < size; i++) {
+        cout << word[i] << endl;
+    }
+}
+
+int main() {
+    char word[100];
+    cin >> word;
+
+    int wordLength = 0;
+    while (word[wordLength] != '\0') {
+        wordLength++;
+    }
+
+    printVertically(word, wordLength);
+
+    return 0;
+}
